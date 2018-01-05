@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.abhi.workoutapp.MainActivity$PlaceholderFragment"
+    android:background="@drawable/background2">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:buttonTint="#eff6f9" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Barbell Bench Press"
+        android:textSize="25dp"
+        android:textColor="#eff6f9"
+        android:id="@+id/bench1"
+        android:layout_above="@+id/checkBox2"
+        android:layout_toEndOf="@+id/checkBox" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginTop="15dp"
+        android:buttonTint="#eff6f9"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/incline1"
+        android:text="Incline Bench Press"
+        android:textSize="25dp"
+        android:textColor="#eff6f9"
+        android:layout_alignBottom="@+id/checkBox2"
+        android:layout_toEndOf="@+id/checkBox2" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp"
+        android:buttonTint="#eff6f9"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dumbbell Row"
+        android:textSize="25dp"
+        android:textColor="#eff6f9"
+        android:id="@+id/bentrow"
+        android:layout_alignBottom="@+id/checkBox3"
+        android:layout_toEndOf="@+id/checkBox3" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox3"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp"
+        android:buttonTint="#eff6f9"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Lat Pull Down"
+        android:textColor="#eff6f9"
+        android:id="@+id/latdown"
+        android:layout_alignBottom="@+id/checkBox4"
+        android:layout_toEndOf="@+id/checkBox4" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:buttonTint="#eff6f9"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Overhead Press"
+        android:textColor="#eff6f9"
+        android:id="@+id/ohp"
+        android:layout_alignBottom="@+id/checkBox5"
+        android:layout_toEndOf="@+id/checkBox5" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/checkBox5"
+        android:layout_alignParentStart="true"
+        android:buttonTint="#eff6f9"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Barbell Curl"
+        android:textColor="#eff6f9"
+        android:id="@+id/curl1"
+        android:layout_alignBottom="@+id/checkBox6"
+        android:layout_toEndOf="@+id/checkBox6" />
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/checkBox6"
+        android:layout_alignParentStart="true"
+        android:buttonTint="#eff6f9"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Tricep Cable Extension"
+        android:textColor="#eff6f9"
+        android:id="@+id/tricepcable"
+        android:layout_alignBottom="@+id/checkBox7"
+        android:layout_toEndOf="@+id/checkBox7" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#eff6f9"
+        android:text="Exercise"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
