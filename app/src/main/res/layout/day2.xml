@@ -7,7 +7,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.abhi.workoutapp.MainActivity$PlaceholderFragment"
-    android:background="@drawable/background2">
+    android:background="@drawable/day1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cardiogram" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -23,6 +28,7 @@
         android:text="Squat"
         android:textSize="25dp"
         android:textColor="#eff6f9"
+        android:textStyle="bold"
         android:id="@+id/squat1"
         android:layout_above="@+id/checkBox2"
         android:layout_toEndOf="@+id/checkBox" />
@@ -40,6 +46,7 @@
         android:layout_height="wrap_content"
         android:text="Deadlift"
         android:textSize="25dp"
+        android:textStyle="bold"
         android:textColor="#eff6f9"
         android:id="@+id/deadlift"
         android:layout_above="@+id/checkBox3"
@@ -57,6 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Leg Press"
+        android:textStyle="bold"
         android:textSize="25dp"
         android:textColor="#eff6f9"
         android:id="@+id/legpress"
@@ -76,6 +84,7 @@
         android:layout_height="wrap_content"
         android:text="Leg Curl"
         android:textSize="25dp"
+        android:textStyle="bold"
         android:textColor="#eff6f9"
         android:id="@+id/legcurl"
         android:layout_above="@+id/checkBox4"
@@ -96,6 +105,7 @@
         android:text="Standing Calf Press"
         android:textSize="25dp"
         android:textColor="#eff6f9"
+        android:textStyle="bold"
         android:id="@+id/standingcalf"
         android:layout_alignBottom="@+id/checkBox5"
         android:layout_toEndOf="@+id/checkBox5" />
@@ -105,7 +115,7 @@
         android:layout_height="wrap_content"
         android:textSize="30dp"
         android:textStyle="bold"
-        android:textColor="#eff6f9"
+        android:textColor="#edf8ff"
         android:text="Exercise"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />

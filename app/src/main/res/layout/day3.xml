@@ -7,7 +7,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.abhi.workoutapp.MainActivity$PlaceholderFragment"
-    android:background="@drawable/background2">
+    android:background="@drawable/day1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cardiogram" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -24,6 +29,7 @@
         android:textSize="25dp"
         android:textColor="#eff6f9"
         android:id="@+id/bench2"
+        android:textStyle="bold"
         android:layout_above="@+id/checkBox2"
         android:layout_toEndOf="@+id/checkBox" />
 
@@ -40,6 +46,7 @@
         android:layout_height="wrap_content"
         android:text="Incline Bench Press"
         android:textSize="25dp"
+        android:textStyle="bold"
         android:textColor="#eff6f9"
         android:id="@+id/incline2"
         android:layout_above="@+id/checkBox3"
@@ -58,6 +65,7 @@
         android:layout_height="wrap_content"
         android:text="Seated Cable Row"
         android:textSize="25dp"
+        android:textStyle="bold"
         android:textColor="#eff6f9"
         android:id="@+id/cableRow"
         android:layout_alignTop="@+id/checkBox3"
@@ -77,6 +85,7 @@
         android:text="Dumbbell Lateral Raise"
         android:textSize="25dp"
         android:textColor="#eff6f9"
+        android:textStyle="bold"
         android:id="@+id/lateralRaise"
         android:layout_alignTop="@+id/checkBox5"
         android:layout_toEndOf="@+id/checkBox5" />
@@ -94,6 +103,7 @@
         android:layout_height="wrap_content"
         android:text="Seated Barbell Curl"
         android:textSize="25dp"
+        android:textStyle="bold"
         android:textColor="#eff6f9"
         android:id="@+id/curl2"
         android:layout_above="@+id/checkBox5"
@@ -112,6 +122,7 @@
         android:layout_height="wrap_content"
         android:text="Tricep Cable Extension"
         android:textSize="25dp"
+        android:textStyle="bold"
         android:textColor="#eff6f9"
         android:id="@+id/tricepcable2"
         android:layout_alignBottom="@+id/checkBox6"

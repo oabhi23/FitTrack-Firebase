@@ -6,6 +6,7 @@ import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.Toolbar;
 
 import android.support.v4.app.Fragment;
@@ -16,6 +17,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
     private SectionsPagerAdapter mSectionsPagerAdapter;
+    private FloatingActionButton fab2;
 
     /**
      * The {@link ViewPager} that will host the section contents.
@@ -39,11 +42,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        Toolbar t = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(t);
 
         ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+        actionBar.setDisplayShowHomeEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
@@ -56,14 +60,52 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        fab2 = (FloatingActionButton) findViewById(R.id.fab2);
+        fab2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, EnterWeight.class);
-                startActivity(i);
-                //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        //.setAction("Action", null).show();
+            public void onClick(View v) {
+                PopupMenu popupMenu = new PopupMenu(MainActivity.this, fab2);
+                popupMenu.getMenuInflater().inflate(R.menu.popup_menu, popupMenu.getMenu());
+
+                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
+
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        Toast.makeText(
+                                MainActivity.this,
+                                "You clicked: " + item.getTitle(),
+                                Toast.LENGTH_SHORT
+                        ).show();
+                        if (item.getTitle().equals("Your Weight")){
+                            Intent intent = new Intent(MainActivity.this, EnterWeight.class);
+                            intent.putExtra("userWeight", "userWeight");
+                            startActivity(intent);
+                        }
+                        else if (item.getTitle().equals("Bench")){
+                            Intent intent = new Intent(MainActivity.this, EnterWeight.class);
+                            intent.putExtra("benchWeight", "benchWeight");
+                            startActivity(intent);
+                        }
+                        else if (item.getTitle().equals("Squat")){
+                            Intent intent = new Intent(MainActivity.this, EnterWeight.class);
+                            intent.putExtra("squatWeight", "squatWeight");
+                            startActivity(intent);
+                        }
+                        else if (item.getTitle().equals("Deadlift")){
+                            Intent intent = new Intent(MainActivity.this, EnterWeight.class);
+                            intent.putExtra("deadliftWeight", "deadliftWeight");
+                            startActivity(intent);
+                        }
+                        else if (item.getTitle().equals("Ohp")){
+                            Intent intent = new Intent(MainActivity.this, EnterWeight.class);
+                            intent.putExtra("ohpWeight", "ohpWeight");
+                            startActivity(intent);
+                        }
+
+                        return true;
+                    }
+                });
+                popupMenu.show();
             }
         });
 
@@ -84,6 +126,9 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+        if(id == android.R.id.home){
+            this.finish();
+        }
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;

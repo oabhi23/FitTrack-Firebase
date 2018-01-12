@@ -7,7 +7,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.abhi.workoutapp.MainActivity$PlaceholderFragment"
-    android:background="@drawable/background2">
+    android:background="@drawable/day1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cardiogram" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -24,6 +29,7 @@
         android:textSize="25dp"
         android:textColor="#eff6f9"
         android:id="@+id/bench1"
+        android:textStyle="bold"
         android:layout_above="@+id/checkBox2"
         android:layout_toEndOf="@+id/checkBox" />
 
@@ -43,6 +49,7 @@
         android:text="Incline Bench Press"
         android:textSize="25dp"
         android:textColor="#eff6f9"
+        android:textStyle="bold"
         android:layout_alignBottom="@+id/checkBox2"
         android:layout_toEndOf="@+id/checkBox2" />
 
@@ -61,6 +68,7 @@
         android:textSize="25dp"
         android:textColor="#eff6f9"
         android:id="@+id/bentrow"
+        android:textStyle="bold"
         android:layout_alignBottom="@+id/checkBox3"
         android:layout_toEndOf="@+id/checkBox3" />
 
@@ -78,6 +86,7 @@
         android:textSize="25dp"
         android:text="Lat Pull Down"
         android:textColor="#eff6f9"
+        android:textStyle="bold"
         android:id="@+id/latdown"
         android:layout_alignBottom="@+id/checkBox4"
         android:layout_toEndOf="@+id/checkBox4" />
@@ -97,6 +106,7 @@
         android:text="Overhead Press"
         android:textColor="#eff6f9"
         android:id="@+id/ohp"
+        android:textStyle="bold"
         android:layout_alignBottom="@+id/checkBox5"
         android:layout_toEndOf="@+id/checkBox5" />
 
@@ -115,6 +125,7 @@
         android:text="Barbell Curl"
         android:textColor="#eff6f9"
         android:id="@+id/curl1"
+        android:textStyle="bold"
         android:layout_alignBottom="@+id/checkBox6"
         android:layout_toEndOf="@+id/checkBox6" />
 
@@ -130,6 +141,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25dp"
+        android:textStyle="bold"
         android:text="Tricep Cable Extension"
         android:textColor="#eff6f9"
         android:id="@+id/tricepcable"

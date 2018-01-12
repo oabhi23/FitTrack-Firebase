@@ -7,7 +7,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.abhi.workoutapp.MainActivity$PlaceholderFragment"
-    android:background="@drawable/background2">
+    android:background="@drawable/day1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cardiogram" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -22,6 +27,7 @@
         android:layout_height="wrap_content"
         android:text="Squat"
         android:textSize="25dp"
+        android:textStyle="bold"
         android:textColor="#eff6f9"
         android:id="@+id/squat2"
         android:layout_above="@+id/checkBox2"
@@ -41,6 +47,7 @@
         android:text="Leg Extension"
         android:textSize="25dp"
         android:textColor="#eff6f9"
+        android:textStyle="bold"
         android:id="@+id/legext"
         android:layout_above="@+id/checkBox4"
         android:layout_toEndOf="@+id/checkBox3" />
@@ -58,6 +65,7 @@
         android:layout_height="wrap_content"
         android:text="Leg Curl"
         android:textSize="25dp"
+        android:textStyle="bold"
         android:textColor="#eff6f9"
         android:id="@+id/legcurl2"
         android:layout_above="@+id/checkBox3"
@@ -76,6 +84,7 @@
         android:layout_height="wrap_content"
         android:text="Seated Calf Press"
         android:textSize="25dp"
+        android:textStyle="bold"
         android:textColor="#eff6f9"
         android:id="@+id/seatedCalfPress"
         android:layout_above="@+id/checkBox5"
@@ -94,6 +103,7 @@
         android:layout_height="wrap_content"
         android:text="Standing Calf Press"
         android:textSize="25dp"
+        android:textStyle="bold"
         android:textColor="#eff6f9"
         android:id="@+id/calfPress2"
         android:layout_alignBottom="@+id/checkBox5"

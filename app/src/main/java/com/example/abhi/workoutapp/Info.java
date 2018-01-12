@@ -3,7 +3,10 @@ package com.example.abhi.workoutapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -43,13 +46,19 @@ public class Info extends AppCompatActivity {
     private TextView exerciseName;
     private TextView sets;
     private TextView reps;
-    //private ImageView form;
     private GifTextView formgif;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.info);
+
+        Toolbar t = (Toolbar) findViewById(R.id.toolbar6);
+        setSupportActionBar(t);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayShowHomeEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         exerciseName = (TextView)findViewById(R.id.exercise);
         reps = (TextView)findViewById(R.id.reps);
@@ -209,5 +218,14 @@ public class Info extends AppCompatActivity {
 
         formgif.getLayoutParams().height = 700;
         formgif.getLayoutParams().width = 900;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        int id = item.getItemId();
+        if(id == android.R.id.home){
+            this.finish();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

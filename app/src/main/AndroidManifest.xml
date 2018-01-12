@@ -5,24 +5,22 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="FitNotes"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".GridLayoutActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
-        <activity android:name=".Info"></activity>
-        <activity android:name=".EnterWeight"></activity>
-        <activity android:name=".WeightTracker"></activity>
-        <activity android:name=".EditDataActivity"></activity>
+        <activity android:name=".MainActivity" android:label="Days" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Info" android:label="Exercise Info" android:screenOrientation="portrait"></activity>
+        <activity android:name=".EnterWeight" android:label="Data Entry" android:screenOrientation="portrait"></activity>
+        <activity android:name=".WeightTracker" android:label="View Data" android:screenOrientation="portrait"></activity>
+        <activity android:name=".EditDataActivity" android:label="Data Editor" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

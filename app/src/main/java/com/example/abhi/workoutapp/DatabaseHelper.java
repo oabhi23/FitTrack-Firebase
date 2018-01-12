@@ -19,8 +19,8 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     private static final String COL4 = "lbs";
 
 
-    public DatabaseHelper(Context context){
-        super(context, TABLE_NAME, null, 1);
+    public DatabaseHelper(Context context, String dbName, int dbVersion){
+        super(context, dbName, null, dbVersion);
     }
 
     @Override
