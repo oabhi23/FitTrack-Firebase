@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/one"
+        android:title="Your Weight"/>
+
+    <item
+        android:id="@+id/two"
+        android:title="Bench"/>
+
+    <item
+        android:id="@+id/three"
+        android:title="Squat"/>
+
+    <item
+        android:id="@+id/four"
+        android:title="Deadlift"/>
+
+    <item android:id="@+id/five"
+        android:title="Ohp"></item>
+</menu>
