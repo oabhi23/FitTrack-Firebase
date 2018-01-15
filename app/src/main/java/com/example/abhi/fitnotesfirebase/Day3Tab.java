@@ -1,4 +1,4 @@
-package com.example.abhi.workoutapp; /**
+package com.example.abhi.fitnotesfirebase; /**
  * Created by Abhi on 12/27/2017.
  */
 
@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.example.abhi.workoutapp.R;
 
 public class Day3Tab extends Fragment {
 

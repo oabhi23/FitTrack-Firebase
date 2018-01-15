@@ -1,4 +1,4 @@
-package com.example.abhi.workoutapp;
+package com.example.abhi.fitnotesfirebase;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.abhi.workoutapp.R;
+
 /**
  * Created by Abhi on 1/1/2018.
  */
@@ -20,11 +22,11 @@ public class EditDataActivity extends AppCompatActivity{
     private Button saveBtn, deleteBtn;
     private EditText enteredWeight;
 
-    DatabaseHelper mDatabaseHelper;
+    /*DatabaseHelper mDatabaseHelper;
     BenchDatabaseHelper benchDatabaseHelper;
     SquatDatabaseHelper squatDatabaseHelper;
     DeadliftDatabaseHelper deadliftDatabaseHelper;
-    OhpDatabaseHelper ohpDatabaseHelper;
+    OhpDatabaseHelper ohpDatabaseHelper;*/
 
     private String selectedItem;
     private int selectedID;
@@ -45,11 +47,11 @@ public class EditDataActivity extends AppCompatActivity{
         deleteBtn = (Button)findViewById(R.id.deletebtn);
         enteredWeight = (EditText)findViewById(R.id.enteredweight);
 
-        mDatabaseHelper = new DatabaseHelper(this, "userWeight", 1);
+        /*mDatabaseHelper = new DatabaseHelper(this, "userWeight", 1);
         benchDatabaseHelper = new BenchDatabaseHelper(this, "benchWeight", 1);
         squatDatabaseHelper = new SquatDatabaseHelper(this, "squatWeight", 1);
         deadliftDatabaseHelper = new DeadliftDatabaseHelper(this, "deadliftWeight", 1);
-        ohpDatabaseHelper = new OhpDatabaseHelper(this, "ohpWeight", 1);
+        ohpDatabaseHelper = new OhpDatabaseHelper(this, "ohpWeight", 1);*/
 
         Intent i = getIntent();
         final Bundle extrasBundle = i.getExtras();
@@ -65,19 +67,19 @@ public class EditDataActivity extends AppCompatActivity{
                 String item = enteredWeight.getText().toString();
                 if(item != ""){
                     if(extrasBundle.containsKey("editBench")){
-                        benchDatabaseHelper.updateName(item, selectedID, selectedItem);
+                        //benchDatabaseHelper.updateName(item, selectedID, selectedItem);
                     }
                     else if(extrasBundle.containsKey("editWeight")){
-                        mDatabaseHelper.updateName(item, selectedID, selectedItem);
+                        //mDatabaseHelper.updateName(item, selectedID, selectedItem);
                     }
                     else if(extrasBundle.containsKey("editSquat")){
-                        squatDatabaseHelper.updateName(item, selectedID, selectedItem);
+                        //squatDatabaseHelper.updateName(item, selectedID, selectedItem);
                     }
                     else if(extrasBundle.containsKey("editDeadlift")){
-                        deadliftDatabaseHelper.updateName(item, selectedID, selectedItem);
+                        //deadliftDatabaseHelper.updateName(item, selectedID, selectedItem);
                     }
                     else if(extrasBundle.containsKey("editOhp")){
-                        ohpDatabaseHelper.updateName(item, selectedID, selectedItem);
+                        //ohpDatabaseHelper.updateName(item, selectedID, selectedItem);
                     }
                     toastMessage("Changes were saved to database");
                 }
@@ -91,19 +93,19 @@ public class EditDataActivity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 if(extrasBundle.containsKey("editBench")){
-                    benchDatabaseHelper.deleteName(selectedID, selectedItem);
+                    //benchDatabaseHelper.deleteName(selectedID, selectedItem);
                 }
                 else if (extrasBundle.containsKey("editWeight")){
-                    mDatabaseHelper.deleteName(selectedID, selectedItem);
+                    //mDatabaseHelper.deleteName(selectedID, selectedItem);
                 }
                 else if (extrasBundle.containsKey("editSquat")){
-                    squatDatabaseHelper.deleteName(selectedID, selectedItem);
+                    //squatDatabaseHelper.deleteName(selectedID, selectedItem);
                 }
                 else if (extrasBundle.containsKey("editDeadlift")){
-                    deadliftDatabaseHelper.deleteName(selectedID, selectedItem);
+                    //deadliftDatabaseHelper.deleteName(selectedID, selectedItem);
                 }
                 else if(extrasBundle.containsKey("editOhp")){
-                    ohpDatabaseHelper.deleteName(selectedID, selectedItem);
+                    //ohpDatabaseHelper.deleteName(selectedID, selectedItem);
                 }
                 enteredWeight.setText("");
                 toastMessage("Removed from database");

@@ -1,7 +1,6 @@
-package com.example.abhi.workoutapp;
+package com.example.abhi.fitnotesfirebase;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.ActionBar;
@@ -18,6 +17,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
+import com.example.abhi.workoutapp.R;
 
 public class MainActivity extends AppCompatActivity {
 

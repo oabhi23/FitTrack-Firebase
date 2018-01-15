@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "155440557591",
+    "firebase_url": "https://fitnotesfirebase.firebaseio.com",
+    "project_id": "fitnotesfirebase",
+    "storage_bucket": "fitnotesfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155440557591:android:862397d2d5fca0e5",
+        "android_client_info": {
+          "package_name": "com.example.abhi.workoutapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155440557591-0joh36el9alnut0h454j2cr1fbtcpft9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.abhi.workoutapp",
+            "certificate_hash": "25d398b7d3580d7fe6622e409410fec96c9853d7"
+          }
+        },
+        {
+          "client_id": "155440557591-9hqv200oclfqrvklro47ddh3e0nl9pjh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjrRG-Y2Hhn2ziYeXn_4DoVlMf6IPiDI0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155440557591-9hqv200oclfqrvklro47ddh3e0nl9pjh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

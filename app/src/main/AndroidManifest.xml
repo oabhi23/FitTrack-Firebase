@@ -5,22 +5,22 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="FitNotes"
+        android:label="FitNotesFirebase"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GridLayoutActivity">
+        <activity android:name="com.example.abhi.fitnotesfirebase.GridLayoutActivity">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" android:label="Days" android:screenOrientation="portrait"></activity>
-        <activity android:name=".Info" android:label="Exercise Info" android:screenOrientation="portrait"></activity>
-        <activity android:name=".EnterWeight" android:label="Data Entry" android:screenOrientation="portrait"></activity>
-        <activity android:name=".WeightTracker" android:label="View Data" android:screenOrientation="portrait"></activity>
-        <activity android:name=".EditDataActivity" android:label="Data Editor" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.example.abhi.fitnotesfirebase.MainActivity" android:label="Days" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.example.abhi.fitnotesfirebase.Info" android:label="Exercise Info" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.example.abhi.fitnotesfirebase.EnterWeight" android:label="Data Entry" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.example.abhi.fitnotesfirebase.WeightTracker" android:label="View Data" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.example.abhi.fitnotesfirebase.EditDataActivity" android:label="Data Editor" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

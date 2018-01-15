@@ -1,21 +1,17 @@
-package com.example.abhi.workoutapp; /**
+package com.example.abhi.fitnotesfirebase; /**
  * Created by Abhi on 12/27/2017.
  */
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.content.LocalBroadcastManager;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
 import android.widget.CheckBox;
 import android.widget.TextView;
+
+import com.example.abhi.workoutapp.R;
 
 public class Day1Tab extends Fragment{
 

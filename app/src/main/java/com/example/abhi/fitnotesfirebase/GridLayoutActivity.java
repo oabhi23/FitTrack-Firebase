@@ -1,4 +1,4 @@
-package com.example.abhi.workoutapp;
+package com.example.abhi.fitnotesfirebase;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.GridLayout;
 import android.widget.Toast;
+
+import com.example.abhi.workoutapp.R;
 
 /**
  * Created by Abhi on 1/10/2018.

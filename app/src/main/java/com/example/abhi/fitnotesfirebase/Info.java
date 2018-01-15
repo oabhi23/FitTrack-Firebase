@@ -1,4 +1,4 @@
-package com.example.abhi.workoutapp;
+package com.example.abhi.fitnotesfirebase;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.abhi.workoutapp.R;
 
 import org.w3c.dom.Text;
 
