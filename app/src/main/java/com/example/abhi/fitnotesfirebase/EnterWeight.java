@@ -10,7 +10,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -25,7 +24,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
@@ -55,8 +53,6 @@ public class EnterWeight extends AppCompatActivity {
     private ArrayList<String> idSquatEntries = new ArrayList<>();
     private ArrayList<String> idDeadliftEntries = new ArrayList<>();
     private ArrayList<String> idOhpEntries = new ArrayList<>();
-
-    private ArrayList<String> chosenEntryID = new ArrayList<>();
 
     private String chosenValue = "";
 

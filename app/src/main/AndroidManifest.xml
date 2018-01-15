@@ -19,8 +19,6 @@
         <activity android:name="com.example.abhi.fitnotesfirebase.MainActivity" android:label="Days" android:screenOrientation="portrait"></activity>
         <activity android:name="com.example.abhi.fitnotesfirebase.Info" android:label="Exercise Info" android:screenOrientation="portrait"></activity>
         <activity android:name="com.example.abhi.fitnotesfirebase.EnterWeight" android:label="Data Entry" android:screenOrientation="portrait"></activity>
-        <activity android:name="com.example.abhi.fitnotesfirebase.WeightTracker" android:label="View Data" android:screenOrientation="portrait"></activity>
-        <activity android:name="com.example.abhi.fitnotesfirebase.EditDataActivity" android:label="Data Editor" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
